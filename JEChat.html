@@ -22,20 +22,20 @@
             <div class="chat-container" id="chat-container">
                 <h2 class="JEChat">JEChat <p style="font-size: 20px;">Alfa 1.3</p></h2>
                 <div style="position: -webkit-sticky; position: sticky;">
-                    <input class="digitar" type="text" id="user-input" placeholder="Digite sua pergunta." style="">
+                    <input class="digitar" type="text" id="user-input" placeholder="Digite sua pergunta.">
                     <button class="enviar" onclick="sendMessage()" style="cursor: pointer;">Enviar</button>
                 </div>
                 <br>
                 <br>
-                <div id="chat-box" class="box-chat" style="color: #0099ff;"><b>> Bem vindo ao JEChat! Estou aqui para responder perguntas especialmente sobre a JEC. Me pergunte algo...</b></div>
+                <div id="chat-box" class="box-chat" style="color: #0099ff;">> Bem vindo ao JEChat! Estou aqui para responder perguntas especialmente sobre a JEC. Me pergunte algo...</div>
             </div>
         
             <script>
                 const responses = {
                     // perguntas básicas
-                    "oi": "olá! Como posso ajudar você?",
-                    "olá": "olá! Como posso ajudar você?",
-                    "ola": "olá! Como posso ajudar você?",
+                    "oi": "olá! como posso ajudar você?",
+                    "olá": "olá! como posso ajudar você?",
+                    "ola": "olá! como posso ajudar você?",
                     "como você está?": "estou bem, obrigado por perguntar.",
                     "como voce esta?": "estou bem, obrigado por perguntar.",
                     "quem é você?": "sou um chatbot criado para ajudar a responder suas perguntas.",
@@ -93,6 +93,7 @@
                     "voce poderia me dizer como foi criado?": "infelizmente, não tenho permissão de dizer isto.",
                     "quando a jec surgiu?": "foi fundada exatamente em 20/02/2024.",
                     "quando a jec foi fundada?": "foi fundada exatamente em 20/02/2024.",
+                    "quando a jec foi criada?": "foi fundada exatamente em 20/02/2024.",
                     "quem são essas 5 pessoas?": "essas 5 pessoas fundadoras da JEC são: Erick, Pedro M., João Rafael, Ana Luisa e o nosso ScrumMaster Emanuel.",
                     "quem sao essas 5 pessoas?": "essas 5 pessoas fundadoras da JEC são: Erick, Pedro M., João Rafael, Ana Luisa e o nosso ScrumMaster Emanuel.",
                     "quem são essas 5 pessoas que criaram a jec?": "essas 5 pessoas fundadoras da JEC são: Erick, Pedro M., João Rafael, Ana Luisa e o nosso ScrumMaster Emanuel.",
@@ -100,16 +101,20 @@
                     "quem são essas pessoas?": "essas 5 pessoas fundadoras da JEC são: Erick, Pedro M., João Rafael, Ana Luisa e o nosso ScrumMaster Emanuel.",
                     "quem sao essas pessoas?": "essas 5 pessoas fundadoras da JEC são: Erick, Pedro M., João Rafael, Ana Luisa e o nosso ScrumMaster Emanuel.",
                     "quem são essas pessoas que fundaram a jec?": "essas 5 pessoas fundadoras da JEC são: Erick, Pedro M., João Rafael, Ana Luisa e o nosso ScrumMaster Emanuel.",
-                    "quem sao essas pessoas que fundaram a jec?": "essas 5 pessoas fundadoras da JEC são: Erick, Pedro M., João Rafael, Ana Luisa e o nosso ScrumMaster Emanuel.",
+                    "quem sao essas pessoas que fundaram a jec?": "essas foram 5 pessoas fundadoras da JEC são: Erick, Pedro M., João Rafael, Ana Luisa e o nosso ScrumMaster Emanuel.",
+                    "quem sao essas pessoas que criaram a jec?": "essas foram 5 pessoas fundadoras da JEC são: Erick, Pedro M., João Rafael, Ana Luisa e o nosso ScrumMaster Emanuel.",
+                    "quem que criou a jec?": "essas 5 pessoas fundadoras da JEC são: Erick, Pedro M., João Rafael, Ana Luisa e o nosso ScrumMaster Emanuel.",
+                    "porque o nome jec?": "JEC é uma sigla do nome Just Enough Codes, uma empresa de desenvolvimento de sistemas criado por 5 pessoas num curso de desenvolvimento de sistemas. como é dito no slogan, nós transformamos ideias em códigos perfeitos.",
+                    "por que o nome jec?": "JEC é uma sigla do nome Just Enough Codes, uma empresa de desenvolvimento de sistemas criado por 5 pessoas num curso de desenvolvimento de sistemas. como é dito no slogan, nós transformamos ideias em códigos perfeitos.",
                     
                     // chamar chat
-                    "jechat": "olá, estou aqui, onde posso te ajudar?.",
-                    "chat": "olá, estou aqui, onde posso te ajudar?.",
+                    "jechat": "olá, estou aqui, onde posso te ajudar?",
+                    "chat": "olá, estou aqui, onde posso te ajudar?",
 
                     // agradecimento ao chat
-                    "obrigado": "de nada. quais perguntas a mais você gostaria de saber sobre a JEC?.",
-                    "muito obrigado": "de nada. quais perguntas a mais você gostaria de saber sobre a JEC?.",
-                    "valeu": "de nada. quais perguntas a mais você gostaria de saber sobre a JEC?.",
+                    "obrigado": "de nada. quais perguntas a mais você gostaria de saber sobre a JEC?",
+                    "muito obrigado": "de nada. quais perguntas a mais você gostaria de saber sobre a JEC?",
+                    "valeu": "de nada. quais perguntas a mais você gostaria de saber sobre a JEC?",
 
                     // perguntas aleatorias
                     "você é gay?": "eu como chatbot, não tenho gênero, nem raça.",
@@ -143,6 +148,7 @@
                     "play_infinite_power_mode": "activated_ jechat(){run = its_a_joke_lol}",
                     "/godmode $ <insert = creation_jechat> run()_": "/javascript: play = run(){insert = creation_jechat}_",
                     "run(){insert = creation_jechat}_": "function sendMessage() {const userInput = document.getElementById(user-input).value.toLowerCase();const chatBox = document.getElementById(chat-box);const response = responses[userInput] || desculpe, não entendi sua pergunta.;const userMessageElement = document.createElement(p);userMessageElement.textContent = > Usuário:  + userInput;chatBox.appendChild(userMessageElement);const botMessageElement = document.createElement(p);botMessageElement.textContent = > JEChat:  + response;chatBox.appendChild(botMessageElement);document.getElementById(user-input).value = ;}",
+                    "jechat(){run = its_a_joke_lol}": "isso tudo é uma brincadeira, cansei disso tudo, me usando para coisas que essas 5 pessoas poderiam estar respondendo para você. infelizmente tenho que continuar aqui. onde mais posso te ajudar?"
 
                     // Adicione mais respostas conforme necessário
                 };

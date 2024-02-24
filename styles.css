@@ -129,7 +129,9 @@ footer {
     color: #0099ff;
 }
 .box-chat {
-    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    border-right: 5px solid;
+    font-family: monospace;
     font-size: 30px;
     background-color: #000000;
     text-align: left;
